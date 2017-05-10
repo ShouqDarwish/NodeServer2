@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddUser(name="adduser",method="post",action="/adduser")
+        input#inputWispid(type="text", placeholder="wispid", name="wispid")
+        input#inputWispname(type="text", placeholder="wispname", name="wispname")
+        button#btnSubmit(type="submit") submit
